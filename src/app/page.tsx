@@ -1,7 +1,13 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Progress } from "@/components/ui/progress";
+
 export default function Home() {
   return (
-    <div>
-      <p className="text-rose-500">Hello World</p>
+    <div className="p-4 flex flex-col gap-y-4">
+      <Button variant="elevated">Hello World</Button>
+      <Input placeholder="Type here..." />
+      <Progress value={50} />
     </div>
   );
 }
